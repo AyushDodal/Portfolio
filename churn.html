@@ -59,16 +59,16 @@
             <a href="#download" class="inline-block text-sm text-gray-600 px-3 py-2">Download Report (PDF)</a>
           </div>
 
-          <!-- Expandable: Model Metrics and Visuals -->
+          <!--OLD-- Expandable: Model Metrics and Visuals --OLD
           <section class="mt-8">
             <h3 class="text-xl font-semibold mb-4">Model Metrics & Visuals</h3>
 
             <div class="grid md:grid-cols-2 gap-4">
               <figure class="bg-gray-50 rounded-lg p-4 border">
                 <figcaption class="text-sm text-gray-600 mb-3">Confusion Matrix</figcaption>
-                <img src="assets/confusion-matrix.png" alt="Confusion matrix" class="w-full h-48 object-contain" />
+                <img src="assets/confusion-matrix.png" alt="Confusion matrix" class="w-full h-48 object-cover" />
               </figure>
-
+          
               <figure class="bg-gray-50 rounded-lg p-4 border">
                 <figcaption class="text-sm text-gray-600 mb-3">ROC Curve</figcaption>
                 <img src="assets/roc-curve.png" alt="ROC curve" class="w-full h-48 object-contain" />
@@ -82,6 +82,44 @@
             </div>
 
           </section>
+-->
+
+
+
+          <!-- NEW-- Expandable: Model Metrics and Visuals --NEW-->
+<section class="mt-8">
+  <h3 class="text-xl font-semibold mb-4">Model Metrics & Visuals</h3>
+
+  <!-- Confusion Matrix + ROC Curve -->
+  <div class="grid md:grid-cols-2 gap-4">
+    <!-- Confusion Matrix -->
+    <figure class="bg-gray-50 rounded-lg p-4 border h-64 overflow-hidden flex flex-col">
+      <figcaption class="text-sm text-gray-600 mb-3">Confusion Matrix</figcaption>
+      <img src="assets/confusion-matrix.png" 
+           alt="Confusion matrix" 
+           class="w-full h-full object-cover rounded-md" />
+    </figure>
+
+    <!-- ROC Curve -->
+    <figure class="bg-gray-50 rounded-lg p-4 border h-64 overflow-hidden flex flex-col">
+      <figcaption class="text-sm text-gray-600 mb-3">ROC Curve</figcaption>
+      <img src="assets/roc-curve.png" 
+           alt="ROC curve" 
+           class="w-full h-full object-cover rounded-md" />
+    </figure>
+  </div>
+
+  <!-- Feature Importance -->
+  <div class="mt-4 bg-white rounded-lg p-4 border h-72 overflow-hidden flex flex-col">
+    <h4 class="font-semibold">Top Feature Importances</h4>
+    <img src="assets/feature-importance.png" 
+         alt="Feature importance" 
+         class="w-full h-full object-contain mt-3 rounded-md" />
+    <p class="text-sm text-gray-600 mt-2">
+      Feature importances computed from XGBoost show which variables most influence churn probability.
+    </p>
+  </div>
+</section>
 
           <!-- Accordion: Technical Notes -->
           <div class="mt-8">
