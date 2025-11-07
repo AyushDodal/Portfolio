@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Investor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">Investor</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-sm font-medium hover:text-indigo-600">Home</a>
+        <a href="projects.html" class="text-sm font-medium hover:text-indigo-600">Projects</a>
+        <a href="#contact" class="text-sm font-medium hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-6">Projects</h2>
+
+    <p class="text-gray-600 mb-8">Click any project to open its detailed page. Each project includes a summary, visuals, model results, and links to code & dashboards.</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Churn Project Thumbnail -->
+      <a href="churn.html" class="group block bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
+        <div class="relative h-48 bg-gray-100">
+          <img src="assets/churn-thumb.png" alt="Churn thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-semibold">Customer Churn Prediction</h3>
+          <p class="text-sm text-gray-600 mt-2">A statistical model predicting telecom customer churn. Built with Pandas, scikit-learn, and XGBoost; visualized with Plotly and Power BI.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs text-gray-500">Classification · Time-series insights</span>
+            <span class="text-xs text-indigo-600 font-medium">View project →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Placeholder project thumbnails (you can add more) -->
+      <div class="bg-white rounded-2xl p-6 shadow flex items-center justify-center text-gray-400">+ Add another project</div>
+      <div class="bg-white rounded-2xl p-6 shadow flex items-center justify-center text-gray-400">+ Add another project</div>
+
+    </div>
+
+  </main>
+</body>
+</html>
